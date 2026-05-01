@@ -1,14 +1,11 @@
 // ============================================================
-// C.I.A — CONTEÚDO INFINITO COM IA — Portal de Agentes
+// C.I.A — CONTEÚDO INFINITO COM IA
 // ============================================================
 
 const AGENTS = [
   {
-    id: 1,
-    emoji: '⚖️',
-    name: 'Advogados',
-    tag: 'Jurídico & Legal',
-    color: '#00D4FF',
+    id: 1, emoji: '⚖️', name: 'Advogados',
+    tag: 'Jurídico & Legal', color: '#00D4FF',
     tagline: 'Fala a língua dos tribunais. Transforma autoridade jurídica em autoridade digital — sem perder a ética, sem perder o cliente.',
     gemUrl: 'https://gemini.google.com/',
     deliverables: [
@@ -20,11 +17,8 @@ const AGENTS = [
     ]
   },
   {
-    id: 2,
-    emoji: '🦷',
-    name: 'Dentistas',
-    tag: 'Saúde & Estética Oral',
-    color: '#80EEFF',
+    id: 2, emoji: '🦷', name: 'Dentistas',
+    tag: 'Saúde & Estética Oral', color: '#80EEFF',
     tagline: 'Do sorriso no antes e depois ao consultório lotado. Conteúdo que converte seguidores em pacientes agendados.',
     gemUrl: 'https://gemini.google.com/',
     deliverables: [
@@ -36,11 +30,8 @@ const AGENTS = [
     ]
   },
   {
-    id: 3,
-    emoji: '🏠',
-    name: 'Corretores de Imóveis',
-    tag: 'Mercado Imobiliário',
-    color: '#FFB830',
+    id: 3, emoji: '🏠', name: 'Corretores de Imóveis',
+    tag: 'Mercado Imobiliário', color: '#FFB830',
     tagline: 'Cada imóvel tem uma história. Cada post tem um comprador. Conteúdo que aquece leads antes mesmo do primeiro contato.',
     gemUrl: 'https://gemini.google.com/',
     deliverables: [
@@ -52,11 +43,8 @@ const AGENTS = [
     ]
   },
   {
-    id: 4,
-    emoji: '💪',
-    name: 'Personal Trainers',
-    tag: 'Fitness & Performance',
-    color: '#FF6B35',
+    id: 4, emoji: '💪', name: 'Personal Trainers',
+    tag: 'Fitness & Performance', color: '#FF6B35',
     tagline: 'Energia, resultado e consistência. Conteúdo que motiva, educa e transforma seguidores em alunos fiéis.',
     gemUrl: 'https://gemini.google.com/',
     deliverables: [
@@ -68,11 +56,8 @@ const AGENTS = [
     ]
   },
   {
-    id: 5,
-    emoji: '✨',
-    name: 'Clínicas de Estética',
-    tag: 'Beleza & Bem-Estar',
-    color: '#C084FC',
+    id: 5, emoji: '✨', name: 'Clínicas de Estética',
+    tag: 'Beleza & Bem-Estar', color: '#C084FC',
     tagline: 'Beleza se vende com desejo, não com técnica. Conteúdo que faz o cliente sonhar com o resultado antes de entrar na clínica.',
     gemUrl: 'https://gemini.google.com/',
     deliverables: [
@@ -84,11 +69,8 @@ const AGENTS = [
     ]
   },
   {
-    id: 6,
-    emoji: '📊',
-    name: 'Contadores',
-    tag: 'Contabilidade & Finanças',
-    color: '#00E5A0',
+    id: 6, emoji: '📊', name: 'Contadores',
+    tag: 'Contabilidade & Finanças', color: '#00E5A0',
     tagline: 'Números são complexos. Conteúdo não precisa ser. Transforma obrigações fiscais em oportunidades de atrair clientes.',
     gemUrl: 'https://gemini.google.com/',
     deliverables: [
@@ -100,11 +82,8 @@ const AGENTS = [
     ]
   },
   {
-    id: 7,
-    emoji: '🧠',
-    name: 'Psicólogos',
-    tag: 'Saúde Mental & Terapia',
-    color: '#9B59D0',
+    id: 7, emoji: '🧠', name: 'Psicólogos',
+    tag: 'Saúde Mental & Terapia', color: '#9B59D0',
     tagline: 'Acolhimento começa antes da primeira sessão. Conteúdo que cria conexão, reduz o estigma e enche a agenda.',
     gemUrl: 'https://gemini.google.com/',
     deliverables: [
@@ -116,11 +95,8 @@ const AGENTS = [
     ]
   },
   {
-    id: 8,
-    emoji: '🍔',
-    name: 'Restaurantes & Delivery',
-    tag: 'Food & Gastronomia',
-    color: '#FF6B35',
+    id: 8, emoji: '🍔', name: 'Restaurantes & Delivery',
+    tag: 'Food & Gastronomia', color: '#FF6B35',
     tagline: 'Comida se vende pelo olho. Conteúdo que faz o cliente salivar, clicar e pedir — ainda hoje.',
     gemUrl: 'https://gemini.google.com/',
     deliverables: [
@@ -132,11 +108,8 @@ const AGENTS = [
     ]
   },
   {
-    id: 9,
-    emoji: '🏛️',
-    name: 'Arquitetos',
-    tag: 'Arquitetura & Design',
-    color: '#E8C96A',
+    id: 9, emoji: '🏛️', name: 'Arquitetos',
+    tag: 'Arquitetura & Design', color: '#E8C96A',
     tagline: 'Projetos levam meses. A decisão de contratar leva segundos. Conteúdo que vende o sonho antes da planta.',
     gemUrl: 'https://gemini.google.com/',
     deliverables: [
@@ -148,11 +121,8 @@ const AGENTS = [
     ]
   },
   {
-    id: 10,
-    emoji: '🔨',
-    name: 'Empresas de Reforma',
-    tag: 'Construção & Reformas',
-    color: '#FFB830',
+    id: 10, emoji: '🔨', name: 'Empresas de Reforma',
+    tag: 'Construção & Reformas', color: '#FFB830',
     tagline: 'Cliente de reforma quer segurança. Conteúdo que mostra competência, processo e resultado — e fecha o contrato.',
     gemUrl: 'https://gemini.google.com/',
     deliverables: [
@@ -164,11 +134,8 @@ const AGENTS = [
     ]
   },
   {
-    id: 11,
-    emoji: '🥗',
-    name: 'Nutricionistas',
-    tag: 'Nutrição & Saúde',
-    color: '#00E5A0',
+    id: 11, emoji: '🥗', name: 'Nutricionistas',
+    tag: 'Nutrição & Saúde', color: '#00E5A0',
     tagline: 'Alimentação saudável é estilo de vida, não dieta. Conteúdo que educa, engaja e transforma seguidores em pacientes.',
     gemUrl: 'https://gemini.google.com/',
     deliverables: [
@@ -180,11 +147,8 @@ const AGENTS = [
     ]
   },
   {
-    id: 12,
-    emoji: '✂️',
-    name: 'Barbearias',
-    tag: 'Beleza Masculina',
-    color: '#00D4FF',
+    id: 12, emoji: '✂️', name: 'Barbearias',
+    tag: 'Beleza Masculina', color: '#00D4FF',
     tagline: 'Barbearia não é só corte — é ritual. Conteúdo que cria comunidade, fideliza clientes e enche a agenda.',
     gemUrl: 'https://gemini.google.com/',
     deliverables: [
@@ -196,11 +160,8 @@ const AGENTS = [
     ]
   },
   {
-    id: 13,
-    emoji: '🩺',
-    name: 'Médicos',
-    tag: 'Medicina & Saúde',
-    color: '#80EEFF',
+    id: 13, emoji: '🩺', name: 'Médicos',
+    tag: 'Medicina & Saúde', color: '#80EEFF',
     tagline: 'Autoridade médica no digital. Conteúdo que informa com responsabilidade, humaniza o profissional e atrai pacientes.',
     gemUrl: 'https://gemini.google.com/',
     deliverables: [
@@ -212,11 +173,8 @@ const AGENTS = [
     ]
   },
   {
-    id: 14,
-    emoji: '📈',
-    name: 'Gestores de Tráfego',
-    tag: 'Marketing Digital',
-    color: '#C084FC',
+    id: 14, emoji: '📈', name: 'Gestores de Tráfego',
+    tag: 'Marketing Digital', color: '#C084FC',
     tagline: 'Quem vende tráfego precisa ter audiência. Conteúdo que posiciona, atrai clientes e prova resultado com dados.',
     gemUrl: 'https://gemini.google.com/',
     deliverables: [
@@ -228,11 +186,8 @@ const AGENTS = [
     ]
   },
   {
-    id: 15,
-    emoji: '🚀',
-    name: 'Infoprodutores & Coaches',
-    tag: 'Educação & Mentoria',
-    color: '#FFB830',
+    id: 15, emoji: '🚀', name: 'Infoprodutores & Coaches',
+    tag: 'Educação & Mentoria', color: '#FFB830',
     tagline: 'Conhecimento que não aparece não vende. Conteúdo que posiciona, aquece audiência e converte em vendas de alto valor.',
     gemUrl: 'https://gemini.google.com/',
     deliverables: [
@@ -246,47 +201,60 @@ const AGENTS = [
 ];
 
 // ============================================================
-// CURSOR PERSONALIZADO
+// CURSOR
 // ============================================================
-const cursor = document.querySelector('.cursor');
+const cursor    = document.querySelector('.cursor');
 const cursorRing = document.querySelector('.cursor-ring');
-let mouseX = 0, mouseY = 0;
-let ringX = 0, ringY = 0;
+let mx = 0, my = 0, rx = 0, ry = 0;
 
 document.addEventListener('mousemove', e => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-  cursor.style.left = mouseX + 'px';
-  cursor.style.top = mouseY + 'px';
+  mx = e.clientX; my = e.clientY;
+  cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
 });
-
-function animateRing() {
-  ringX += (mouseX - ringX) * 0.12;
-  ringY += (mouseY - ringY) * 0.12;
-  cursorRing.style.left = ringX + 'px';
-  cursorRing.style.top = ringY + 'px';
-  requestAnimationFrame(animateRing);
-}
-animateRing();
+(function animRing() {
+  rx += (mx - rx) * 0.1; ry += (my - ry) * 0.1;
+  cursorRing.style.left = rx + 'px'; cursorRing.style.top = ry + 'px';
+  requestAnimationFrame(animRing);
+})();
 
 // ============================================================
-// PARTÍCULAS
+// PARTICLES
 // ============================================================
-const colors = ['#00D4FF','#FFB830','#7B2FBE','#00E5A0','#FF6B35','#C084FC','#80EEFF','#E8C96A'];
+const COLORS = ['#00D4FF','#FFB830','#7B2FBE','#00E5A0','#FF6B35','#C084FC','#80EEFF','#E8C96A'];
 
 function createParticles() {
   const container = document.querySelector('.particles');
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i < 35; i++) {
     const p = document.createElement('div');
     p.classList.add('particle');
-    p.style.left = Math.random() * 100 + 'vw';
-    p.style.width = p.style.height = (Math.random() * 3 + 1) + 'px';
-    p.style.background = colors[Math.floor(Math.random() * colors.length)];
-    p.style.boxShadow = `0 0 6px ${p.style.background}`;
-    p.style.animationDuration = (Math.random() * 20 + 10) + 's';
-    p.style.animationDelay = (Math.random() * 20) + 's';
+    const c = COLORS[Math.floor(Math.random() * COLORS.length)];
+    const s = Math.random() * 2.5 + 0.5;
+    p.style.cssText = `
+      left:${Math.random()*100}vw;
+      width:${s}px; height:${s}px;
+      background:${c};
+      box-shadow:0 0 ${s*3}px ${c};
+      animation-duration:${Math.random()*25+15}s;
+      animation-delay:${Math.random()*25}s;
+    `;
     container.appendChild(p);
   }
+}
+
+// ============================================================
+// SIDEBAR SEARCH
+// ============================================================
+function initSearch() {
+  const input = document.querySelector('.sidebar-search input');
+  if (!input) return;
+  input.addEventListener('input', e => {
+    const q = e.target.value.toLowerCase().trim();
+    document.querySelectorAll('.agent-item').forEach(el => {
+      const name = el.querySelector('.agent-name').textContent.toLowerCase();
+      const tag  = el.querySelector('.agent-tag').textContent.toLowerCase();
+      el.style.display = (!q || name.includes(q) || tag.includes(q)) ? '' : 'none';
+    });
+  });
 }
 
 // ============================================================
@@ -300,7 +268,7 @@ function renderSidebar() {
     item.dataset.id = agent.id;
     item.innerHTML = `
       <span class="agent-num">${String(agent.id).padStart(2,'0')}</span>
-      <span class="agent-emoji">${agent.emoji}</span>
+      <div class="agent-emoji-wrap">${agent.emoji}</div>
       <div class="agent-info">
         <span class="agent-name">${agent.name}</span>
         <span class="agent-tag">${agent.tag}</span>
@@ -309,19 +277,18 @@ function renderSidebar() {
     `;
     item.addEventListener('click', () => selectAgent(agent.id));
     list.appendChild(item);
-
-    // Staggered entrance
-    setTimeout(() => {
-      item.classList.add('visible');
-    }, i * 60 + 300);
+    setTimeout(() => item.classList.add('visible'), i * 50 + 200);
   });
 }
 
 // ============================================================
-// RENDER AGENT CARDS
+// RENDER CARDS
 // ============================================================
 function renderCards() {
-  const main = document.querySelector('.main-content');
+  const isMobile = window.innerWidth <= 900;
+  const container = isMobile
+    ? document.querySelector('.mobile-deck')
+    : document.querySelector('.main-content');
 
   AGENTS.forEach(agent => {
     const card = document.createElement('div');
@@ -332,7 +299,7 @@ function renderCards() {
     const delivsHtml = agent.deliverables.map(d => `
       <div class="deliverable">
         <span class="deliverable-icon">${d.icon}</span>
-        <div class="deliverable-info">
+        <div>
           <div class="deliverable-name">${d.name}</div>
           <div class="deliverable-desc">${d.desc}</div>
         </div>
@@ -340,81 +307,159 @@ function renderCards() {
     `).join('');
 
     card.innerHTML = `
-      <div class="card-hero" data-emoji="${agent.emoji}">
-        <div class="card-number">AGENTE ${String(agent.id).padStart(2,'0')} · ${agent.tag}</div>
-        <span class="card-emoji-large">${agent.emoji}</span>
-        <h1 class="card-title">${agent.name}</h1>
-        <p class="card-tagline">${agent.tagline}</p>
+      <div class="card-hero">
+        <div class="hero-accent-line"></div>
+        <div class="hero-bg-number">${String(agent.id).padStart(2,'0')}</div>
+        <div class="hero-emoji-bg">${agent.emoji}</div>
+        <div class="hero-gradient"></div>
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <div class="hero-tag">
+              <span class="hero-tag-line"></span>
+              ${agent.tag}
+            </div>
+            <span class="hero-id">AGT-${String(agent.id).padStart(3,'0')}</span>
+          </div>
+          <h1 class="hero-title">${agent.name}</h1>
+          <p class="hero-tagline">${agent.tagline}</p>
+        </div>
       </div>
 
-      <div class="deliverables-grid">
-        ${delivsHtml}
+      <div class="deliverables-section">
+        <div class="section-label">Entregas do Agente</div>
+        <div class="deliverables-grid">${delivsHtml}</div>
       </div>
 
       <div class="cta-section">
-        <div class="cta-info">
-          <div class="cta-label">Acesso ao Agente</div>
+        <div class="cta-left">
+          <div class="cta-eyebrow">Acesso ao Agente</div>
           <div class="cta-title">C.I.A · ${agent.name}</div>
           <div class="cta-sub">Agente especializado · IA 100% gratuita</div>
-          <div class="status-bar" style="margin-top:12px">
-            <span class="status-dot"></span>
+          <div class="cta-status">
+            <span class="pulse-dot"></span>
             AGENTE ONLINE
           </div>
         </div>
-        <a href="${agent.gemUrl}" target="_blank" class="btn-access" style="background:linear-gradient(135deg,${agent.color},var(--purple))">
+        <a href="${agent.gemUrl}" target="_blank" class="btn-access" style="background:${agent.color}">
           Acessar Agente
           <span class="btn-arrow">→</span>
         </a>
       </div>
     `;
 
-    main.appendChild(card);
+    container.appendChild(card);
   });
 }
 
 // ============================================================
-// SELECT AGENT
+// SELECT AGENT (desktop)
 // ============================================================
 function selectAgent(id) {
-  // Sidebar
-  document.querySelectorAll('.agent-item').forEach(el => {
-    el.classList.toggle('active', parseInt(el.dataset.id) === id);
-  });
-
-  // Cards
-  document.querySelectorAll('.agent-card').forEach(el => {
-    el.classList.remove('active');
-  });
-
-  // Welcome state
+  document.querySelectorAll('.agent-item').forEach(el =>
+    el.classList.toggle('active', +el.dataset.id === id)
+  );
+  document.querySelectorAll('.agent-card').forEach(el =>
+    el.classList.remove('active')
+  );
   const welcome = document.querySelector('.welcome-state');
   if (welcome) welcome.style.display = 'none';
 
-  // Activate card with re-animation
   setTimeout(() => {
     const card = document.querySelector(`.agent-card[data-id="${id}"]`);
     if (card) {
-      card.classList.add('active');
-      // Force reflow for re-animation
       card.style.animation = 'none';
       card.offsetHeight;
       card.style.animation = '';
+      card.classList.add('active');
+      card.closest('.main').scrollTo({ top: 0, behavior: 'smooth' });
     }
-  }, 50);
+  }, 40);
 
-  // Scroll sidebar item into view
   const activeItem = document.querySelector(`.agent-item[data-id="${id}"]`);
   if (activeItem) activeItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// ============================================================
+// MOBILE FILTER BAR
+// ============================================================
+function renderMobileFilter() {
+  const bar = document.querySelector('.mobile-filter');
+  if (!bar) return;
+
+  // Categories derived from agents
+  const categories = ['Todos', ...new Set(AGENTS.map(a => a.tag.split(' & ')[0]))];
+
+  categories.slice(0, 8).forEach((cat, i) => {
+    const pill = document.createElement('button');
+    pill.classList.add('filter-pill');
+    if (i === 0) pill.classList.add('active');
+    pill.textContent = cat;
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      filterMobileCards(cat);
+    });
+    bar.appendChild(pill);
+  });
+}
+
+function filterMobileCards(cat) {
+  document.querySelectorAll('.agent-card').forEach(card => {
+    const id = +card.dataset.id;
+    const agent = AGENTS.find(a => a.id === id);
+    const matches = cat === 'Todos' || agent.tag.startsWith(cat);
+    card.style.display = matches ? '' : 'none';
+  });
+}
+
+// ============================================================
+// TICKER COUNTER ANIMATION
+// ============================================================
+function animateTicker() {
+  const items = [
+    { el: document.querySelector('.ticker-agents'), target: 15, suffix: '' },
+    { el: document.querySelector('.ticker-professions'), target: 100, suffix: '+' },
+    { el: document.querySelector('.ticker-possibilities'), target: 999, suffix: '+' },
+  ];
+  items.forEach(({ el, target, suffix }) => {
+    if (!el) return;
+    let current = 0;
+    const step = target / 40;
+    const interval = setInterval(() => {
+      current = Math.min(current + step, target);
+      el.textContent = Math.floor(current).toLocaleString('pt-BR') + suffix;
+      if (current >= target) clearInterval(interval);
+    }, 30);
+  });
 }
 
 // ============================================================
 // INIT
 // ============================================================
 document.addEventListener('DOMContentLoaded', () => {
-  createParticles();
-  renderSidebar();
-  renderCards();
+  const isMobile = window.innerWidth <= 900;
 
-  // Auto-select first agent after entrance animations
-  setTimeout(() => selectAgent(1), 800);
+  createParticles();
+
+  if (!isMobile) {
+    renderSidebar();
+    initSearch();
+    renderCards();
+    setTimeout(() => selectAgent(1), 600);
+  } else {
+    renderCards();
+    renderMobileFilter();
+  }
+
+  // Ticker animation
+  setTimeout(animateTicker, 800);
+
+  // Keyboard nav (desktop)
+  if (!isMobile) {
+    let currentId = 1;
+    document.addEventListener('keydown', e => {
+      if (e.key === 'ArrowDown') { currentId = Math.min(currentId + 1, AGENTS.length); selectAgent(currentId); }
+      if (e.key === 'ArrowUp')   { currentId = Math.max(currentId - 1, 1); selectAgent(currentId); }
+    });
+  }
 });
